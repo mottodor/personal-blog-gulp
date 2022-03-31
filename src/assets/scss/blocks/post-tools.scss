@@ -1,0 +1,121 @@
+.post-container {
+	width: 100%;
+	padding: 2.5rem;
+	margin-bottom: 3rem;
+	background-color: $primary;
+	color: $white;
+	overflow: hidden;
+	box-shadow: 0 1.5rem 2.5rem rgba($color: #000000, $alpha: 0.35);
+
+	@include media($bp-mobile) {
+		padding: 1.5rem;
+	}
+}
+
+.post-content {
+	padding: 1rem 0 0.6rem;
+}
+
+.post-time,
+.post-tag {
+	font-size: 1.2rem;
+	color: #828282;
+}
+
+.post-tag {
+	position: relative;
+	margin-left: 3.6rem;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.post-tag::before {
+	content: "";
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+	background-color: #c4c4c4;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-25%);
+	left: -1.8rem;
+}
+
+.post-link {
+	margin-left: auto;
+	color: #107eff;
+	text-align: right;
+	text-decoration: none;
+	cursor: pointer;
+	&:hover {
+		text-decoration: underline;
+	}
+	input {
+		display: none;
+	}
+}
+
+.post-media {
+	border-radius: 0.5rem;
+	overflow: hidden;
+	margin: -2.5rem -2.5rem 2.5rem;
+	&--video,
+	&--article {
+		margin: 0 0 2.5rem;
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		height: auto;
+		margin: 0 auto;
+	}
+}
+
+.post-title {
+	margin: 0;
+	margin-bottom: 1rem;
+	font-weight: 500;
+	font-size: 1.8rem;
+	color: $white;
+}
+
+.post-text {
+	color: $third;
+	margin-bottom: 1.5rem;
+}
+
+.post-group {
+	display: flex;
+	align-items: center;
+
+	&--header {
+		margin: -1rem 0 1rem;
+	}
+}
+
+.post-back-link,
+.post-share-link {
+	font-size: 1.2rem;
+	color: #828282;
+	transition: color 0.3s linear;
+	&:hover {
+		color: $white;
+		.post-icon {
+			fill: $white;
+		}
+	}
+}
+
+.post-share-link {
+	margin-left: auto;
+}
+
+.post-icon {
+	fill: #828282;
+	width: 2rem;
+	height: 2rem;
+	margin-left: 0.8rem;
+}

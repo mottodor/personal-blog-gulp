@@ -1,0 +1,25 @@
+.search-form {
+  min-width: 20rem;
+  width: 100%;
+  background-color: $primary;
+}
+
+.search-form__field {
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: white;
+  display: block;
+  padding: 1.2rem 2rem;
+  width: 100%;
+
+  &::placeholder {
+    color: rgba($color: #fff, $alpha: 0.4);
+  }
+
+  @include media($bp-tablet) {
+    font-size: 1.6rem;
+    padding: 0.6em 2rem;
+  }
+}

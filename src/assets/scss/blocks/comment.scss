@@ -1,0 +1,43 @@
+.comment__item {
+	margin-bottom: 2rem;
+}
+
+.comment__item > .comment__list {
+	padding-left: 3rem;
+	@include media($bp-mobile) {
+		padding-left: 1.5rem;
+	}
+}
+
+.comment__header {
+	display: flex;
+	margin-bottom: 1.5rem;
+}
+
+.comment__avatar {
+	margin-right: 1.5rem;
+	align-self: center;
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.comment__group {
+	display: flex;
+	flex-direction: column;
+}
+
+.comment__name {
+	font-size: 1.2rem;
+	font-weight: 500;
+}
+
+.comment__text {
+	margin-bottom: 0.5rem;
+}
+
+.comment__btn {
+	background-color: transparent;
+	border: none;
+	padding: 0;
+}

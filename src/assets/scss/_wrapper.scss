@@ -1,0 +1,11 @@
+.wrapper {
+	max-width: 90rem;
+	padding-left: 5rem;
+	padding-right: 5rem;
+	margin: 0 auto;
+
+	@include media($bp-mobile) {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}

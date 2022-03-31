@@ -1,0 +1,41 @@
+---
+layout: default
+title: Профиль
+---
+
+<h1 class="page-title page-title--md">Профиль</h1>
+
+<form class="form form--row" action="/" method="POST">
+	<div class="form__groups">
+		<input
+			class="form__control"
+			type="text"
+			placeholder="Ваше имя"
+			value="Александр Провостин"
+		/>
+		<input
+			class="form__control"
+			type="email"
+			placeholder="Ваше email"
+			value="alex.provo@mail.com"
+		/>
+		<input class="form__control" type="password" placeholder="Новый пароль" />
+		<input
+			class="form__control"
+			type="password"
+			placeholder="Подтвердить пароль"
+		/>
+		<div class="btn-wrapper">
+			<button class="btn btn--blue btn--rect btn--sm" type="submit">
+				Сохранить
+			</button>
+		</div>
+	</div>
+	<div class="form__avatar">
+		<img src="img/avatar.jpg" alt="Аватар" />
+		<label class="post-link"
+			>Выбрать аватар
+			<input type="file" name="avatar" />
+		</label>
+	</div>
+</form>

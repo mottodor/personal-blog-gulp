@@ -1,0 +1,7 @@
+.main {
+	padding: 10rem 0 8rem $sidebar-width;
+
+	@include media($bp-tablet) {
+		padding: 6rem 0 3rem;
+	}
+}

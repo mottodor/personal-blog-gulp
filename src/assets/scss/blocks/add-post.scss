@@ -1,0 +1,70 @@
+.add-post {
+	padding: 1.5rem 2rem;
+	background-color: $secondary;
+	margin-bottom: 3rem;
+	box-shadow: 0 15px 25px rgba($black, 0.45);
+	border-radius: 5px;
+}
+
+.add-post__form {
+	display: flex;
+	align-items: center;
+}
+
+.add-post__text {
+	display: block;
+	resize: none;
+	flex-grow: 1;
+	height: 2.6rem;
+	font-size: 1.5rem;
+	font-family: inherit;
+	color: #d2d2d2;
+	background: transparent;
+	border: none;
+	overflow: hidden;
+}
+
+.add-post__form-action {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: auto;
+	width: 12rem;
+	flex-shrink: 0;
+	@include media($bp-mobile) {
+		width: 9rem;
+	}
+}
+
+.add-post__btn-file,
+.add-post__btn-send {
+	width: 4.4rem;
+	height: 4.4rem;
+	border-radius: 50%;
+	border: none;
+	margin-left: 1.5rem;
+	@include media($bp-mobile) {
+		width: 3.3rem;
+		height: 3.3rem;
+		margin-left: 1rem;
+	}
+}
+
+.add-post__btn-file {
+	display: block;
+	background: #ebebeb url("../img/icon-photo.svg") center no-repeat;
+	cursor: pointer;
+	input {
+		display: none;
+	}
+}
+
+.add-post__btn-send {
+	background: $blue url("../img/icon-arrow.svg") center no-repeat;
+}
+
+.add-post__btn-file,
+.add-post__btn-send {
+	@include media($bp-mobile) {
+		background-size: 50%;
+	}
+}

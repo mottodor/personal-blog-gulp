@@ -1,0 +1,28 @@
+---
+layout: default
+title: Регистрация
+---
+
+<div class="sign">
+	<h1 class="page-title page-title--md">Регистрация</h1>
+	<form class="form form--md" action="/" method="POST">
+		<input class="form__control" type="text" placeholder="Ваше имя" />
+		<input class="form__control" type="email" placeholder="Ваше email" />
+		<input class="form__control" type="password" placeholder="Пароль" />
+		<input
+			class="form__control"
+			type="password"
+			placeholder="Подтвердить пароль"
+		/>
+
+		<div class="btn-wrapper">
+			<button class="btn btn--blue btn--rect btn--sm" type="submit">
+				Регистрация
+			</button>
+		</div>
+		<div class="sign__links">
+			<a class="sign__link" href="/signin.html">Войти</a>
+			<a class="sign__link" href="/reset.html">Восстановить</a>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,46 @@
+.btn {
+	font-family: inherit;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-align: center;
+	color: $white;
+	cursor: pointer;
+	background-color: $secondary;
+	border: none;
+	text-decoration: none;
+	padding: 1.1em 2.1em;
+	margin: 0 0.5em;
+	border-radius: 3em;
+	transition: background-color 0.2s linear;
+	&:hover {
+		text-decoration: none;
+	}
+
+	&--red {
+		background-color: #cd251a;
+	}
+	&--red:hover,
+	&--red:focus {
+		background-color: darken($color: #cd251a, $amount: 5%);
+	}
+	&--blue {
+		background-color: #2a5fe7;
+	}
+	&--blue:hover,
+	&--blue:focus {
+		background-color: darken($color: #2a5fe7, $amount: 5%);
+	}
+
+	&--rect {
+		margin: 0;
+		border-radius: 0.41em;
+	}
+
+	&--sm {
+		padding: 0.7em 1.5em;
+	}
+}
+
+.btn-wrapper {
+	padding-top: 2rem;
+}

@@ -1,0 +1,59 @@
+@import 'reset';
+@import 'vars';
+@import 'mixins';
+@import 'fonts';
+@import 'wrapper';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #181818;
+    color: $white;
+    font-size: 1.6rem;
+    font-family: $system-fonts;
+    line-height: 1.5;
+    &.no-scroll,
+    &.show-sidebar {
+        overflow: hidden;
+    }
+}
+
+a {
+    font: inherit;
+    color: inherit;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+@import 'blocks/page.scss';
+@import 'blocks/sidebar.scss';
+@import 'blocks/nav.scss';
+@import 'blocks/header.scss';
+@import 'blocks/search.scss';
+@import 'blocks/burger.scss';
+@import 'blocks/btn.scss';
+@import 'blocks/profile.scss';
+@import 'blocks/social.scss';
+@import 'blocks/main.scss';
+@import 'blocks/post-tools.scss';
+@import 'blocks/form.scss';
+@import 'blocks/embed.scss';
+@import 'blocks/stories.scss';
+@import 'blocks/add-post.scss';
+@import 'blocks/pagination.scss';
+@import 'blocks/related.scss';
+@import 'blocks/comment.scss';
+@import 'blocks/work.scss';
+@import 'blocks/tags.scss';
+@import 'blocks/sign.scss';
+@import 'blocks/modal.scss';

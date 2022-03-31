@@ -1,0 +1,15 @@
+@mixin font($font_name, $font_file, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url('../fonts/#{$font_file}.woff') format('woff'), url('../fonts/#{$font_file}.woff2') format('woff2');
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@mixin media($bp) {
+  @media all and (max-width: $bp) {
+    @content;
+  }
+}

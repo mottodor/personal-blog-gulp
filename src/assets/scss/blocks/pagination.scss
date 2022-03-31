@@ -1,0 +1,29 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination__item {
+  margin: 0 0.5rem;
+  box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.15);
+  border-radius: 0.4rem;
+  background-color: #0d0d0d;
+  transition: background-color 0.3s ease-in-out;
+  &:hover {
+    background-color: lighten($color: #0d0d0d, $amount: 5%);
+  }
+  &.active {
+    background-color: #104be3;
+    background-color: lighten($color: #104be3, $amount: 5%);
+  }
+}
+
+.pagination__link {
+  display: block;
+  padding: 1.2rem 1.6rem;
+  text-decoration: none;
+  color: white;
+  &:hover {
+    text-decoration: none;
+  }
+}

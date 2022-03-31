@@ -1,0 +1,26 @@
+.tags {
+	display: flex;
+	margin-bottom: 1.5rem;
+	flex-wrap: wrap;
+}
+
+.tag {
+	font-size: 1.1rem;
+	background-color: #ea8c1e;
+	margin-right: 0.9em;
+	margin-bottom: 0.9rem;
+	border-radius: 0.4em;
+	transition: background-color 0.2s linear;
+	&:hover {
+		background-color: darken($color: #ea8c1e, $amount: 10%);
+	}
+
+	a {
+		display: block;
+		padding: 0.36em 0.81em;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

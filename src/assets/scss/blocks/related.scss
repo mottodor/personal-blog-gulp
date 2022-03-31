@@ -1,0 +1,37 @@
+.related {
+	padding: 3rem 0 0.6rem;
+	border-bottom: 0.1rem solid #1c1c1c;
+	border-top: 0.1rem solid #1c1c1c;
+}
+
+.related__list {
+	display: flex;
+	flex-wrap: wrap;
+
+	@include media($bp-mobile) {
+		flex-direction: column;
+		flex-wrap: nowrap;
+	}
+}
+
+.related__item {
+	width: 50%;
+	margin-bottom: 2.4rem;
+	padding-right: 1rem;
+	@include media($bp-mobile) {
+		width: 100%;
+	}
+}
+
+.related__post-title {
+	margin-bottom: 0.5rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	a {
+		color: #f3eba2;
+		text-decoration: none;
+		font-weight: 500;
+	}
+}
